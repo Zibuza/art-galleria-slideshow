@@ -1,0 +1,386 @@
+.slideShow h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: unset;
+  text-align: left;
+  color: #000000;
+  letter-spacing: unset;
+}
+
+.slideShow {
+  position: relative;
+}
+
+.portrait {
+  width: 64px;
+  margin-left: 16px;
+}
+
+.heroTitleWrapper {
+  position: relative;
+}
+
+.artistLabel {
+  
+  width: 280px;
+  padding: 24px;
+  background: white;
+  margin-top: -54px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.artistLabel p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #7d7d7d;
+}
+
+.hero {
+  margin-top: 24px;
+}
+
+.descrip {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7d7d;
+  padding-bottom: 40px;
+}
+
+.descripWrapper {
+  position: relative;
+}
+
+.desktopWrapper {
+  opacity: 1;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
+
+.bigText {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  text-align: right;
+  color: #f3f3f3;
+  z-index: -1;
+}
+
+.slideShow a {
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 1.92857px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+
+
+
+.heroBtnWrapper {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.modalBtn {
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: right;
+  letter-spacing: 2.14286px;
+  color: #ffffff;
+  width: 152px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* React Transition Group */
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 400ms;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-exit-active {
+  transition: opacity 400ms;
+}
+
+.slide-enter {
+  opacity: 0;
+}
+
+.slide-enter-active {
+  opacity: 1;
+}
+
+.slide-exit {
+  opacity: 1;
+}
+
+.slide-exit-active {
+  opacity: 0;
+}
+
+.modalContent {
+  border-radius: 5px;
+  position: relative;
+}
+
+.modalContent img {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.closeBtn {
+  margin-top: 10px;
+  position: absolute;
+  top: -50px;
+  right: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 3px;
+  color: #ffffff;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.heroLarge {
+  display: none;
+}
+
+@media screen and (min-width: 702px) {
+  .hero {
+    display: none;
+  }
+
+  .heroLarge {
+    display: unset;
+    margin-top: 40px;
+    width: 475px;
+  }
+
+  .artistLabel {
+    width: unset;
+    padding: unset;
+    margin: unset;
+    width: 445px;
+    height: 238px;
+
+    justify-content: flex-start;
+    padding-left: 50px;
+    position: absolute;
+    right: 0;
+    top: 39px;
+  }
+
+  .artistLabel h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    width: 90%;
+  }
+
+  .portrait {
+    width: 128px;
+    margin-left: 30px;
+    margin-top: 82px;
+  }
+
+  .descripWrapper {
+    margin-top: 64px;
+  }
+
+  .descrip {
+    padding-left: 124px;
+    padding-right: 110px;
+
+    padding-top: 75px;
+  }
+
+  .slideShow a {
+    padding-left: 124px;
+  }
+
+  .bigText {
+    left: 0;
+    right: unset;
+    top: 0;
+    font-size: 200px;
+    line-height: 150px;
+  }
+
+  .heroBtnWrapper {
+    top: unset;
+    bottom: 16px;
+  }
+
+  .heroTitleWrapper {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 938px) {
+  
+
+  .artistLabel {
+    right: unset;
+    left: 415px;
+  }
+
+  
+
+  .sourceLink:hover {
+    color: black;
+  }
+
+  .modalBtn:hover {
+    background: #42424296;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portrait {
+    margin-top: auto;
+  }
+
+  .desktopWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .descripWrapper {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .descrip {
+    padding: 0;
+    width: 350px;
+    margin: 0;
+  }
+
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 100px;
+    gap: 10px;
+  }
+
+  .rightContainer a {
+    padding: 0;
+  }
+
+  .artistLabel {
+    top: -1px;
+    left: 310px;
+  }
+
+  .artistLabel h1 {
+    width: 90%;
+  }
+
+  .heroLarge {
+    margin: 0;
+    width: 475px;
+  }
+
+  .bigText {
+    top: 70px;
+  }
+}
+
+
+ 
+
+  
+
+  
+  
+
+  .rightContainer {
+    margin-top: unset;
+  }
+
+  .bigText {
+    top: -95px;
+  }
+
+  .artistLabel {
+    left: 410px;
+  }
+
+  .rightContainer {
+    margin-top: auto;
+    gap: 81px;
+  }
+
+  .portrait {
+    margin-bottom: -60px;
+  }
+

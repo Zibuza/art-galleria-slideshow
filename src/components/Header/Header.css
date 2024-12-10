@@ -1,0 +1,76 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.4375rem;
+  
+}
+
+.logo {
+  width: 113.04px;
+  height: 2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.5625rem;
+  line-height: 0.6875rem;
+  text-align: right;
+  letter-spacing: 1.92857px;
+  color: #7d7d7d;
+  
+}
+
+.slideLink {
+
+  text-decoration: none;
+}
+
+.slideLink:hover {
+
+  text-decoration: underline;
+  text-decoration-color:#000000a4 !important;
+}
+
+nav h1:hover {
+
+  color: black;
+}
+
+.line {
+  width: 100%;
+  position: absolute;
+  height: 0.0625rem;
+  background: #e5e5e5;
+  top: 79px;
+  left: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 169.56px;
+    height: 48px;
+  }
+
+  h1 {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 2.57143px;
+  }
+
+  .line {
+
+    top: 8rem;
+    width: 1360px;
+    left: 40px;
+  }
+
+  nav {
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
